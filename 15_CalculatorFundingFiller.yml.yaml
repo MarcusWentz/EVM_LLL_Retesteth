@@ -1,4 +1,4 @@
-01_add22:
+15_CalculatorFunding:
   env:
     currentCoinbase: 2adc25665018aa1fe0e6bc666dac8fc2697ff9ba
     currentDifficulty: 0x20000
@@ -28,9 +28,10 @@
                 [[10]] (MOD 3 2)                  ;SSTORE[10] = 3%2 = 1
                 [[11]] (SHR 1 4)                  ;SSTORE[11] = 4>>1 = 2
                 [[12]] (SHL 1 4)                  ;SSTORE[12] = 4<<1 = 8
-                [[13]] (NOT 1)                    ;SSTORE[13] = -1*1 = -1 [LARGE HEX VALUE: THAT IS UINT256-1]
-                [[14]] (SUB (EXP 2 256) 1 )       ;SSTORE[14] = (2**256)-1 = uint MAX VALUE (256 BITS)!
-                ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;IF PUT BACK IN, FAILS BECAUSE IT GOES PAST MAX uint! [[15]] (EXP 2 256)
+                [[13]] (NOT 1)                    ;SSTORE[13] = Flip all bits (1's complement)
+                [[14]] (ADD 5 (ADD (NOT 3) 1) )   ;SSTORE[14] = 5+(-3) = 2 (2's complement represents -3 with 1's complement + 1)
+                [[15]] (SUB (EXP 2 256) 1 )       ;SSTORE[15] = (2**256)-1 = uint MAX VALUE (256 BITS)!
+                ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;IF PUT BACK IN, FAILS BECAUSE IT GOES PAST MAX uint! [[16]] (EXP 2 256)
         }
       nonce: '0'
       storage: {}
@@ -80,5 +81,6 @@
             0x0b: 0x02
             0x0c: 0x08
             0x0d: 0xfffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffe
-            0x0e: 0xffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
-            #IF PUT BACK IN, FAILS AS EXPECTED BECAUSE IT GOES PAST 256 BITS (32 BYTES, 64 HEX DIGITS) 0x0f: 0x10000000000000000000000000000000000000000000000000000000000000000
+            0x0e: 0x02
+            0x0f: 0xffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
+            #IF PUT BACK IN, FAILS AS EXPECTED BECAUSE IT GOES PAST 256 BITS (32 BYTES, 64 HEX DIGITS) 0x0g: 0x10000000000000000000000000000000000000000000000000000000000000000
