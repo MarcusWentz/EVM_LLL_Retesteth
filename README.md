@@ -27,4 +27,4 @@ After installing locally [with docker image from: http://retesteth.ethdevops.io/
 - [Reference: https://ethereum-tests.readthedocs.io/en/latest/state-transition-tutorial.html#compiling-your-first-test]
 
 # Output:
-<img src="https://github.com/MarcusWentz/EVM_LLL_Retesteth/blob/main/images/EVM_RESULT_2.png" alt="Output"/>
+<img src="https://github.com/MarcusWentz/EVM_LLL_Retesteth/blob/main/images/EVM_RESULT_3.png" alt="Output"/>
