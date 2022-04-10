@@ -23,7 +23,8 @@ EVM testing using the Lisp Like Language (lll) [very low level EVM language].
 
 # Run:
 After installing locally [with docker image from: http://retesteth.ethdevops.io/web/], run test with:
-- sudo ./dretesteth.sh -t GeneralStateTests/stExample --     --singletest CalculatorFunding --testpath ~/tests     --datadir /tests/config --filltilltests
+         
+    sudo ./dretesteth.sh -t GeneralStateTests/stExample -- --singletest CalculatorFunding --testpath ~/tests --datadir /tests/config --filltests
 - [Reference: https://ethereum-tests.readthedocs.io/en/latest/state-transition-tutorial.html#compiling-your-first-test]
 
 # Output:
