@@ -43,7 +43,7 @@ CalculatorFunding:
       storage: {}
   transaction:
     data:
-    - '0xFF'
+    - ''
     gasLimit:
     - '80000000'
     gasPrice: 1000
