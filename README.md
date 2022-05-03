@@ -24,7 +24,7 @@ EVM testing using the Lisp Like Language (lll) [very low level EVM language].
 # Run:
 After installing locally [with docker image from: http://retesteth.ethdevops.io/web/], run test with:
 
-## Sudo permission 
+## Docker Sudo permission 
     whoami 
     sudo usermod -a -G docker <'whoami' value goes here>
 
