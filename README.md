@@ -1,5 +1,9 @@
 # EVM_LLL_Retesteth
 
+<img src="https://github.com/MarcusWentz/EVM_LLL_Retesteth/blob/main/images/lispLikeLanguageLogo.png" alt="Output"/>
+
+Custom Lisp Like Language (lll) logo created by Marcus Wentz (inspired from the Lisp language logo https://en.wikipedia.org/wiki/Lisp_(programming_language) )
+
 EVM testing using the Lisp Like Language (lll) [very low level EVM language].
 
 # Tests:
